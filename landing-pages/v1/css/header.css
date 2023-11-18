@@ -1,0 +1,21 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+  
+.header-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.header-logo {
+    z-index: 10;
+}

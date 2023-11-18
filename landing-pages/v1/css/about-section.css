@@ -1,0 +1,72 @@
+#about-desktop {
+    display: none;
+    visibility: hidden;
+  }
+  
+.about-container {
+    width: 85%;
+    margin: 5rem auto;
+}
+  
+.about-image {
+    width: 100%;
+}
+  
+.about-title {
+    margin-top: 3rem;
+}
+  
+.about-text {
+    margin-top: 2rem;
+}
+  
+.about-title, .abouttext {
+    text-align: center;
+}
+  
+@media screen and (min-width: 1440px) {
+    #about-mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    #about-desktop {
+        display: block;
+        visibility: visible;
+        height: 500px;
+    }
+
+    .about-container {
+        display: flex;
+        background-image: url("../images/desktop/image-interactive.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 60% auto;
+        justify-content: end;
+        align-items: flex-end;
+        height: 100%;
+        width: 80%;
+    }
+
+    .about-text-container {
+        z-index: 10;
+        height: 70%;
+        width: 50%;
+        background-color: hsl(0, 0%, 100%);
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        /* align-items: flex-end; */
+    }
+
+    .about-text {
+        line-height: 2rem;
+        max-width: 55ch;
+    }
+
+    .about-title, .about-text {
+        text-align: left;
+        margin-left: 15%;
+    }
+}
