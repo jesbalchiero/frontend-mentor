@@ -1,0 +1,66 @@
+.footer {
+    @media (min-width: $desktop-sm) {
+        grid-area: 7/1/8/3;
+    }
+
+    background-color: lighten($footer-bgc, 30%);
+    color: $footer-bgc;
+
+    &__logo {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 15% 0 10%;
+
+        @media (min-width: $desktop-sm) {
+            padding: 6% 0 3%;
+        }
+
+        img {
+            height: 3.2em;
+
+            @media (min-width: $desktop-sm) {
+                height: 2.5em;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        margin: 0 auto 20%;
+        font-size: 2em;
+
+        @media (min-width: $mobile-lg) {
+            margin-bottom: 15%;
+        }
+
+        @media (min-width: $desktop-sm) {
+            width: 16%;
+            margin-bottom: 5%;
+            font-size: 1.5em;
+        }
+
+        i {
+            color: $icons;
+            transition: 0.2s;
+
+            &:hover {
+                color: $white;
+
+            }
+        }
+
+    }
+
+}
+
+.attribution {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 4px 0;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}

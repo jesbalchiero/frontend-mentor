@@ -1,0 +1,29 @@
+@import "variables";
+
+body {
+    font-size: 10px;
+    font-family: 'Barlow', sans-serif;
+
+    @media (min-width: $mobile-md) {
+        font-size: 12px;
+    }
+
+    @media (min-width: $mobile-lg) {
+        font-size: 14px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Fraunces', serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    overflow: hidden;
+
+}
