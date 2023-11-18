@@ -1,0 +1,57 @@
+.client {
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    padding: 20% 0 2%;
+
+    @media (min-width: $mobile-lg) {
+        padding-top: 15%;
+    }
+
+    &__avatar {
+        height: 70px;
+        width: 70px;
+        margin: 0 auto;
+
+        img {
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    &__txt {
+        padding: 10% 0;
+        color: $very-dark-grayish-blue;
+        font-size: 1.8em;
+        line-height: 1.8;
+
+        @media (min-width: $desktop-sm) {
+            font-size: 1.25em;
+            padding: 15% 0 20%;
+        }
+    }
+
+    &__name {
+        display: block;
+        padding-bottom: 4%;
+        font-family: 'Fraunces', serif;
+        color: $very-dark-desaturated-blue;
+        font-weight: 900;
+        font-size: 1.7em;
+
+        @media (min-width: $desktop-sm) {
+            font-size: 1.3em;
+            align-self: end;
+        }
+    }
+
+    &__profession {
+        display: block;
+        color: $grayish-blue;
+        font-size: 1.4em;
+
+        @media (min-width: $desktop-sm) {
+            font-size: 1.1em;
+            align-self: end;
+        }
+    }
+}

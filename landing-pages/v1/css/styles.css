@@ -1,0 +1,66 @@
+@import "./header.css";
+@import "./nav.css";
+@import "./landing.css";
+@import "./about-section.css";
+@import "./products-section.css";
+@import "./footer.css";
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+  --josefin-sans: "Josefin Sans", sans-serif;
+  --alata: "Alata", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 375px;
+}
+
+.display-none {
+  display: none;
+  visibility: hidden;
+}
+
+.display-none * {
+  display: none;
+  visibility: hidden;
+  width: 0;
+}
+
+.title {
+  font-size: 36px;
+  font-family: var(--josefin-sans);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.sub-title {
+  font-size: 32px;
+  font-family: var(--josefin-sans);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.text {
+  font-size: 15px;
+  font-family: var(--alata);
+  color: hsl(0, 0%, 55%);
+}
+
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 48px;
+  }
+
+  .sub-title {
+    font-size: 1.5rem;
+  }
+}

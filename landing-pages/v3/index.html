@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Fylo Landing Page</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-wrapper">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a href="#" class="header-nav-link">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#" class="header-nav-link">Team</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#" class="header-nav-link">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-img-wrapper">
+          <img src="./images/illustration-1.svg" alt="First Illustration">
+        </div>
+        <div class="hero-info">
+          <h1 class="hero-title">All your files in one secure location, accessible anywhere.</h1>
+          <p class="hero-subtitle">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+          <form class="hero-form">
+            <div class="hero-form-group">
+              <input id="hero-email-input" name="email" type="email" class="hero-email-input" placeholder="Enter your email...">
+              <p class="hero-error">Please check your email</p>
+            </div>
+            <button class="hero-submit">Get started</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="how-it-works">
+      <div class="working-container">
+        <div class="working-img-wrapper">
+          <img src="./images/illustration-2.svg" alt="Second Illustration">
+        </div>
+        <div class="working-info">
+          <h2 class="working-title">Stay productive, wherever you are</h2>
+          <p class="working-desc">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+          <p class="working-desc">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+          <a href="#" class="working-link">See how Fylo works
+            <img src="./images/icon-arrow.svg" alt="Next Button">
+          </a>
+          <div class="testimonial-card">
+            <div class="quote-img-wrapper">
+              <img src="./images/icon-quotes.svg" alt="Quotes">
+            </div>
+            <p class="testimonial-desc">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+            <div class="testimonial-user">
+              <div class="user-img-wrapper">
+                <img src="./images/avatar-testimonial.jpg" alt="Avatar">
+              </div>
+              <div class="user-info">
+                <div class="user-name">Kyle Burton</div>
+                <div class="user-job">Founder & CEO, Huddle</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="early-access">
+      <div class="early-access-container">
+        <div class="early-access-info">
+          <h2 class="early-access-title">Get early access today</h2>
+          <p class="early-access-desc">It only takes a minute to sign up and our free tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+        </div>
+        <form class="early-access-form">
+          <input type="email" name="email" id="email" class="early-access-email-input" placeholder="email@example.com">
+          <p class="early-access-error">Please check your email</p>
+          <button class="early-access-submit">Get started for free</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="logo-wrapper">
+        <img src="./images/logo.svg" alt="Logo">
+      </div>
+      <div class="footer-content">
+        <div class="contact">
+          <div class="phone">
+            <div class="footer-icon-wrapper">
+              <img src="./images/icon-phone.svg" alt="Phone Image" />
+            </div>
+            <p class="phone-text">+1-543-123-4567</p>
+          </div>
+          <div class="email">
+            <div class="footer-icon-wrapper">
+              <img src="./images/icon-email.svg" alt="E-mail Image" />
+            </div>
+            <p class="email-text">example@fylo.com</p>
+          </div>
+        </div>
+        <div class="quick-links-wrapper">
+          <ul class="quick-links-list">
+            <li class="quick-links-item">
+              <a href="#" class="quick-links-link">About Us</a>
+            </li>
+            <li class="quick-links-item">
+              <a href="#" class="quick-links-link">Jobs</a>
+            </li>
+            <li class="quick-links-item">
+              <a href="#" class="quick-links-link">Press</a>
+            </li>
+            <li class="quick-links-item">
+              <a href="#" class="quick-links-link">Blog</a>
+            </li>
+          </ul>
+          <ul class="quick-links-list">
+            <li class="quick-links-item">
+              <a href="#" class="quick-links-link">Contact Us</a>
+            </li>
+            <li class="quick-links-item">
+              <a href="#" class="quick-links-link">Terms</a>
+            </li>
+            <li class="quick-links-item">
+              <a href="#" class="quick-links-link">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="social-links">
+          <li class="social-link"><i class="fab fa-facebook-f"></i></li>
+          <li class="social-link"><i class="fab fa-twitter"></i></li>
+          <li class="social-link"><i class="fab fa-instagram"></i></li>
+        </ul>
+      </div>
+    </div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/jesbalchiero" target="_blank">Jean Carlo Sbalchiero</a>.
+    </p>
+  </footer>
+</body>
+</html>
