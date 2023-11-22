@@ -1,0 +1,147 @@
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+  
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+  
+    --font-size: 0.9375rem;
+  
+    --big-shoulders: 'Big Shoulders Display', cursive;
+    --lexend-deca: 'Lexend Deca', sans-serif;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--lexend-deca);
+    color: var(--light-gray);
+    background-color: var(--light-gray);
+    font-size: var(--font-size);
+    min-height: 100vh;
+}
+
+main {
+    min-width: 20.375rem;
+    margin: 2.5rem 1.25rem;
+}
+
+.card {
+    padding: 2.1875rem 3.125rem;
+}
+
+.first-card {
+    background-color: var(--orange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.second-card {
+    background-color: var(--dark-cyan);
+}
+
+.third-card {
+    background-color: var(--very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: var(--big-shoulders);
+    line-height: 3rem;
+    margin-top: 1.25rem;
+}
+
+.card-description {
+    color: var(--transparent-white);
+    line-height: 1.5625rem;
+    margin-top: 1.25rem;
+}
+
+.btn {
+    margin-top: 1.25rem;
+    padding: 0.625 1.875rem;
+    border-radius: 1.875rem;
+    border: 2px solid var(--transparent-white);
+}
+
+.btn:hover, .btn:active {
+    background-color: inherit;
+    color: var(--light-gray);
+}
+
+.first-btn {
+    color: var(--orange);
+    line-height: 1.5625rem;
+}
+
+.second-btn {
+    color: var(--dark-cyan);
+    line-height: 1.5625rem;
+}
+
+.third-btn {
+    color: var(--very-dark-cyan);
+    line-height: 1.5625rem;
+}
+
+@media (min-width: 64em) {
+    
+    body {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    main {
+        display: flex;
+        position: absolute;
+        bottom: 125px;
+        max-width: 57.5rem;
+    }
+
+    .card {
+        height: 31.25rem;
+    }
+
+    .first-card {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .third-card {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .card-title {
+        margin-top: 2.5rem;
+    }
+
+    .card-description {
+        margin-top: 2rem;
+    }
+
+    .btn {
+        margin-top: 4rem;
+        padding: 0.625rem 2.1875rem;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--dark-cyan);
+    margin-top: 800px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
