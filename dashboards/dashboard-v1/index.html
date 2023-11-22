@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="dash">
+          <div class="user">
+            <div class="profile">
+              <img src="images/image-jeremy.png" alt="user profile image" class="profile-img">
+              <div class="profile-text">
+                <p class="profile-text-sub-title">Report for</p>
+                <h1 class="profile-text-title">Jeremy Robson</h1>
+              </div>
+            </div>
+            <div class="time-periods">
+              <button id="btn-daily" class="btn btn-daily">Daily</button>
+              <button id="btn-weekly" class="btn btn-weekly">Weekly</button>
+              <button id="btn-monthly" class="btn btn-monthly">Monthly</button>
+            </div>
+          </div>
+          <div class="work">
+            <div class="time-report">
+              <div class="time-report-top">
+                <h2 class="time-report-top-title">Work</h2>
+                <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" class="time-report-icon">
+              </div>
+              <div class="time-report-btm">
+                <h1 id="work-current" class="time-report-btm-time">--hrs</h1>
+                <p id="work-previous" class="time-report-btm-previous">--</p>
+              </div>
+            </div>
+          </div>
+          <div class="play">
+            <div class="time-report">
+              <div class="time-report-top">
+                <h2 class="time-report-top-title">Play</h2>
+                <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" class="time-report-icon">
+              </div>
+              <div class="time-report-btm">
+                <h1 id="play-current" class="time-report-btm-time">--hrs</h1>
+                <p id="play-previous" class="time-report-btm-previous">--</p>
+              </div>
+            </div>
+          </div>
+          <div class="study">
+            <div class="time-report">
+              <div class="time-report-top">
+                <h2 class="time-report-top-title">Study</h2>
+                <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" class="time-report-icon">
+              </div>
+              <div class="time-report-btm">
+                <h1 id="study-current" class="time-report-btm-time">--hrs</h1>
+                <p id="study-previous" class="time-report-btm-previous">--</p>
+              </div>
+            </div>
+          </div>
+          <div class="exercise">
+            <div class="time-report">
+              <div class="time-report-top">
+                <h2 class="time-report-top-title">Exercise</h2>
+                <img src="./images/icon-ellipsis.svg"	alt="ellipsis icon"	class="time-report-icon">
+              </div>
+              <div class="time-report-btm">
+                <h1 id="exercise-current" class="time-report-btm-time">--hrs</h1>
+                <p id="exercise-previous" class="time-repor-btm-previous">--</p>
+              </div>
+            </div>
+          </div>
+          <div class="social">
+            <div class="time-report">
+              <div class="time-report-top">
+                <h2 class="time-report-top-title">Social</h2>
+                <img src="./images/icon-ellipsis.svg" alt="ellipsis icon"	class="time-report-icon">
+              </div>
+              <div class="time-report-btm">
+                <h1 id="social-current" class="time-report-btm-time">--hrs</h1>
+                <p id="social-previous" class="time-report-btm-previous">--</p>
+              </div>
+            </div>
+          </div>
+          <div class="self-care">
+            <div class="time-report">
+              <div class="time-report-top">
+                <h2 class="time-report-top-title">Self-Care</h2>
+                <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" class="time-report-icon">
+              </div>
+              <div class="time-report-btm">
+                <h1 id="self-care-current" class="time-report-btm-time">--hrs</h1>
+                <p id="self-care-previous" class="time-report-btm-previous">--</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/jesbalchiero">Jean Carlo Sbalchiero</a>.
+      </div>
+    </footer>
+    <script src="./load.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

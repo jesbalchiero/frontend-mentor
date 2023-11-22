@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+	font-size: 10px;
+	--clr-primary-blue: hsla(246, 80%, 60%, 1);
+	--clr-primary-work: hsla(15, 100%, 70%, 1);
+	--clr-primary-play: hsla(195, 74%, 62%, 1);
+	--clr-primary-study: hsla(348, 100%, 68%, 1);
+	--clr-primary-exercise: hsla(145, 58%, 55%, 1);
+	--clr-primary-social: hsla(264, 64%, 52%, 1);
+	--clr-primary-self-care: hsla(43, 84%, 65%, 1);
+	--clr-neutral-very-dark-blue: hsla(226, 43%, 10%, 1);
+	--clr-neutral-dark-blue: hsla(235, 46%, 20%, 1);
+	--clr-neutral-desaturared-blue: hsla(236, 41%, 34%, 1);
+	--clr-neutral-pale-blue: hsla(236, 100%, 87%, 1);
+	--clr--btn--passive: hsla(235, 45%, 61%, 1);
+	--clr-white: hsla(0, 0%, 100%, 1);
+	--ff-primary: "Rubik", sans-serif;
+	--fs-body: 1.8rem;
+}
+
+body {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+body, h1, h2, h3, h4, h5, p, figure, picture {
+    margin: 0;
+	padding: 0; 
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+html, body {
+	background: var(--clr-neutral-very-dark-blue);
+	font-family: var(--ff-primary);
+	font-size: var(--fs-body);
+	font-style: normal;
+	font-weight: normal;
+	color: var(--clr-white);
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 375px;
+	margin: 0 auto;
+}
+
+.dash {
+	display: grid;
+	grid-template-columns: minmax(min-content, max-content);
+	grid-template-rows: minmax(min-content, max-content);
+	grid:"user" "work" "play" "study" "exercise" "social" "self-care";
+	gap: 2.4rem;
+	margin: 8.1rem 2.4rem;
+}
+
+.user, .work, .play, .study, .exercise, .social, .self-care {
+	border-radius: 1.5rem;
+	overflow: hidden;
+}
+
+.user {
+	grid-area: user;
+	background: var(--clr-neutral-dark-blue);
+}
+
+.profile {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	isolation: isolate;
+}
+
+.profile::before, .profile::after {
+	content: "";
+	position: absolute;
+	background: var(--clr-primary-blue);
+	width: 100%;
+	height: 100%;
+	border-radius: 1.5rem;
+	z-index: -1;
+}
+
+.profile-img {
+	width: 6.4rem;
+	height: 6.4rem;
+	outline: 3px solid var(--clr-white);
+	border-radius: 50%;
+	margin: 3.5rem 2rem 3.4rem 3.2rem;
+	filter: drop-shadow(0rem 0.4rem 0.4rem hsla(0, 0%, 0%, 0.25));
+}
+
+.profile-text {
+	margin-right: 3.9rem;
+}
+
+.time-periods {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 2.4rem 0 2.5rem 0;
+}
+
+.btn {
+	font-size: 1.8rem;
+	line-height: 2.1rem;
+	text-align: center;
+	color: var(--clr--btn--passive);
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+	color: var(--clr-white);
+}
+
+.btn-active {
+	color: #ffffff;
+}
+
+.profile-text-sub-title {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	color: var(--clr-neutral-pale-blue);
+	margin-bottom: 0.4rem;
+}
+
+.profile-text-title {
+	font-weight: 300;
+	font-size: 2.4rem;
+	line-height: 2.8rem;
+}
+
+.time-report {
+	position: relative;
+	background-color: var(--clr-neutral-dark-blue);
+	border-radius: 1.5rem;
+	margin-top: 3.8rem;
+	padding: 2.8rem 2.4rem 2.8rem 2.4rem;
+	isolation: isolate;
+	z-index: 2;
+}
+
+.time-report:hover, .time-report:focus {
+	background-color: var(--clr-neutral-desaturared-blue);
+	cursor: pointer;
+}
+
+.time-report-top, .time-report-btm {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.time-report-top {
+	margin-bottom: 0.6rem;
+}
+
+.time-report-icon:hover, .time-report-icon:focus {
+	filter: brightness(0) invert(1);
+	cursor: pointer;
+}
+
+.time-report-top-title {
+	font-weight: 500;
+	font-size: 1.8rem;
+	line-height: 2.1rem;
+}
+
+.time-report-btm-time {
+	font-weight: 300;
+	font-size: 3.2rem;
+	line-height: 3.8rem;
+}
+
+.time-report-btm-previous {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	text-align: right;
+	color: var(--clr-neutral-pale-blue);
+}
+
+.work {
+	grid-area: work;
+	position: relative;
+	background: linear-gradient( to top, var(--clr-neutral-very-dark-blue) 0%, var(--clr-primary-work) 50%, var(--clr-primary-work) 100%);
+	isolation: isolate;
+	z-index: 1;
+}
+
+.work::before, .work::after {
+	content: "";
+	position: absolute;
+	background-image: url("./images/icon-work.svg");
+	background-repeat: no-repeat;
+	width: 7.8rem;
+	height: 7.8rem;
+	top: -1.09rem;
+	right: 1.742rem;
+	z-index: 0;
+}
+
+.play {
+	grid-area: play;
+	position: relative;
+	background: linear-gradient(to top, var(--clr-neutral-very-dark-blue) 0%, var(--clr-primary-play) 50%, var(--clr-primary-play) 100%);
+	isolation: isolate;
+	z-index: 0;
+}
+
+.play::before, .play::after {
+	content: "";
+	position: absolute;
+	background-image: url("./images/icon-play.svg");
+	background-repeat: no-repeat;
+	width: 9rem;
+	height: 9rem;
+	top: -1.44rem;
+	right: 1.1rem;
+	z-index: -1;
+}
+
+.study {
+	grid-area: study;
+	position: relative;
+	background: linear-gradient(to top, var(--clr-neutral-very-dark-blue) 0%, var(--clr-primary-study) 50%, var(--clr-primary-study) 100%);
+	isolation: isolate;
+	z-index: 0;
+}
+
+.study::before, .study::after {
+	content: "";
+	position: absolute;
+	background-image: url("./images/icon-study.svg");
+	background-repeat: no-repeat;
+	width: 7.8rem;
+	height: 7.8rem;
+	top: -0.605rem;
+	right: 1.707rem;
+	z-index: -1;
+}
+
+.exercise {
+	grid-area: exercise;
+	position: relative;
+	background: linear-gradient(to top, var(--clr-neutral-very-dark-blue) 0%, var(--clr-primary-exercise) 50%, var(--clr-primary-exercise) 100%);
+	isolation: isolate;
+	z-index: 0;
+}
+
+.exercise::before, .exercise::after {
+	content: "";
+	position: absolute;
+	background-image: url("./images/icon-exercise.svg");
+	background-repeat: no-repeat;
+	width: 8.1rem;
+	height: 5.348rem;
+	top: -0.042rem;
+	right: 1.627rem;
+	z-index: -1;
+}
+
+.social {
+	grid-area: social;
+	position: relative;
+	background: linear-gradient(to top, var(--clr-neutral-very-dark-blue) 0%, var(--clr-primary-social) 50%, var(--clr-primary-social) 100%);
+	isolation: isolate;
+	z-index: 0;
+}
+
+.social::before, .social::after {
+	content: "";
+	position: absolute;
+	background-image: url("./images/icon-social.svg");
+	background-repeat: no-repeat;
+	width: 7.36rem;
+	height: 10rem;
+	top: -1.5rem;
+	right: 1.348rem;
+	z-index: -1;
+}
+
+.self-care {
+	grid-area: self-care;
+	position: relative;
+	background: linear-gradient(to top, var(--clr-neutral-very-dark-blue) 0%, var(--clr-primary-self-care) 50%, var(--clr-primary-self-care) 100% );
+	isolation: isolate;
+	z-index: 0;
+}
+
+.self-care::before, .self-care::after {
+	content: "";
+	position: absolute;
+	background-image: url("./images/icon-self-care.svg");
+	background-repeat: no-repeat;
+	width: 7.2rem;
+	height: 6.6rem;
+	top: -1.5rem;
+	right: 1.348rem;
+	z-index: -1;
+}
+
+.attribution {
+	font-size: 1.1rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.attribution {
+	margin-bottom: 0.25rem;
+}
+
+.attribution a {
+	color: var(--clr-primary-blue);
+}
+
+@media only screen and (min-width: 1024px) {
+
+	.container {
+		width: 100%;
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+
+	.dash {
+		grid: "user work play study" "user exercise social self-care";
+		gap: 3rem;
+	}
+
+	.profile {
+		width: 25.5rem;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.profile-img {
+		width: 7.8rem;
+		height: 7.8rem;
+		margin: 3.7rem 0 4.3rem 3.2rem;
+	}
+
+	.profile-text {
+		margin: 0;
+		margin: 0 8.5rem 8rem 3.2rem;
+	}
+
+	.profile-text-sub-title {
+		margin-bottom: 0.3rem;
+	}
+
+	.time-periods {
+		flex-direction: column;
+		align-items: flex-start;
+		margin: 2.6rem 0.5rem 3.2rem 3.2rem;
+	}
+
+	.btn-daily,	.btn-weekly {
+		margin-bottom: 2.1rem;
+	}
+
+	.time-report {
+		margin-top: 4.5rem;
+		padding: 2.9rem 3.5rem 3.2rem 3rem;
+	}
+
+	.time-report-top {
+		margin-bottom: 2.4rem;
+	}
+
+	.time-report-btm {
+		width: 19rem;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.time-report-btm-previous {
+		text-align: left;
+	}
+
+	.profile-text-title {
+		font-size: 4rem;
+		line-height: 4.7rem;
+	}
+
+	.time-report-btm-time {
+		font-size: 5.6rem;
+		line-height: 6.6rem;
+		margin-bottom: 0.8rem;
+	}
+}
