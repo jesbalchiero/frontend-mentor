@@ -1,0 +1,107 @@
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);;
+    font-family: 'Red Hat Display', sans-serif;
+    width: auto;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h4, .order {
+    color: hsl(224, 47%, 23%);
+}
+
+p {
+    color: hsl(224, 47%, 55%);
+    max-width: 67%;
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 10em;
+    margin-bottom: 5em;
+}
+
+.header-img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.music {
+    background-color: hsl(224, 100%, 97%);;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 8px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    margin-right: 110px;
+    margin-left: 10px;
+    color: hsl(224, 23%, 55%);
+}
+
+.change {
+    color: hsl(245, 75%, 52%);
+}
+
+.payment{
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-weight: 800;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;      
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);  
+}
+
+.ref-payment {
+    color: hsl(225, 100%, 98%);
+    
+}
+
+.order {
+    margin-top: 2em;
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+    margin: 12px 0;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
