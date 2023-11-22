@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header, .container, footer {
+  margin: 0 auto;
+  margin-top: -20px;
+  position: relative;
+  padding: 6rem 1rem;
+  text-align: center;
+  max-width: max-content;
+}
+
+img.logo {
+    width: 75px;
+    height: 23px;
+}
+  
+h1 {
+    padding: 2rem 0 1rem 0;
+    color: var(--gray);
+    font-weight: 300;
+    font-size: 2.6rem;
+}
+  
+h1 span {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+  
+header p {
+    color: var(--very-dark-blue);
+    font-weight: 300;
+    margin-bottom: -600px;
+}
+
+.notify {
+    width: 100%;
+}
+
+.mail {
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+}
+
+.mail input {
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: 1px solid var(--pale-blue);
+    border-radius: 2rem;
+    width: 100%;
+}
+
+.notify input.error {
+    border-color: var(--light-red);
+}
+
+p.error-msg {
+    display: none;
+    color: var(--light-red);
+    padding: 0.3rem 0 0 1.5rem;
+    text-align: start;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.mail input.error ~ p.error-msg {
+    display: block;
+}
+
+.mail input::placeholder {
+    color: hsl(224, 53%, 83%);
+}
+  
+.notify button {
+    color: #fff;
+    background-color: var(--blue);
+    padding: 1rem 3rem;
+    margin-left: 0.7rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    vertical-align: top;
+    box-shadow: 2px 5px 9px var(--blue); 
+}
+
+.notify button:hover, .notify button:active {
+    background-color: hsl(223, 85%, 69%);
+}
+  
+.main-img {
+    max-width: 550px;
+    max-height: 350px;
+    margin: 2rem 0;
+    margin-bottom: -140px;
+}
+
+footer ul {
+    list-style: none;
+}
+  
+footer ul li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.6rem;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+  
+footer ul li a:visited, footer ul li a {
+    color: var(--blue);
+}
+  
+footer ul li:hover, footer ul li:active, footer ul li:hover a, footer ul li:active a {
+    background-color: var(--blue);
+    color: #fff;
+}
+  
+footer p {
+    color: var(--gray);
+    font-size: 0.7rem;
+    margin-top: 1.5rem;
+}
