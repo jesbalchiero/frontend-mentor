@@ -1,0 +1,424 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  body {
+    background-color: white;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    overflow-x: hidden;
+    place-content: center;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: -4rem;
+    width: 280px;
+    height: 600px;
+    background: linear-gradient(-145deg, #e942ff, #8838ff);
+    border-bottom-right-radius: 20rem;
+    border-bottom-left-radius: 10rem;
+    display: block;
+    z-index: -1;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    bottom: -10rem;
+    right: -11rem;
+    width: 320px;
+    height: 450px;
+    background-color: #f5f3f7;
+    border-top-right-radius: 15rem;
+    border-top-left-radius: 15rem;
+    overflow-x: hidden;
+    display: block;
+  }
+  
+  main {
+    margin-block: 3.9rem;
+  }
+
+  main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+  }
+
+  main .container .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-content: center;
+  }
+
+  main .container .grid .left-app {
+    grid-column: 1/2;
+  }
+
+  main .container .grid .left-app .app {
+    width: 250px;
+    box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.1);
+    margin-inline: auto;
+    padding: 0.6rem;
+    background-color: #fff;
+    border-radius: 30px;
+  }
+
+  main .container .grid .left-app .app_inner {
+    height: 100%;
+  }
+
+  main .container .grid .left-app .app_inner_body {
+    background-color: #f5f3f7;
+    padding: 0.6rem;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  main .container .grid .left-app .app_inner_body .top {
+    max-width: 140px;
+  }
+
+  main .container .grid .left-app .app_inner_body .top p {
+    border-radius: 8px;
+    border-bottom-left-radius: 1px;
+    background-color: #e3e1e5;
+    font-size: 0.5rem;
+    color: #9241c8;
+    padding: 0.4rem;
+    font-weight: 500;
+  }
+
+  main .container .grid .left-app .app_inner_body .top .p2 {
+    margin-top: 0.6rem;
+    font-weight: 500;
+  }
+
+  main .container .grid .left-app .app_inner_body .center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+
+  main .container .grid .left-app .app_inner_body .center p {
+    font-size: 0.5rem;
+    background-color: white;
+    padding: 0.5rem;
+    margin-top: 0.6rem;
+    max-width: 150px;
+    color: #a39daa;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border-bottom-right-radius: 1px;
+  }
+
+  main .container .grid .left-app .app_inner_body .center .animal-box {
+    display: flex;
+  }
+
+  main .container .grid .left-app .app_inner_body .center .animal-box img {
+    margin-inline: 0.3rem;
+    width: 40px;
+    border-radius: 7px;
+  }
+
+  main .container .grid .left-app .app_inner_body .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0.6rem;
+  }
+
+  main .container .grid .left-app .app_inner_body .bottom p {
+    background-color: #e3e1e5;
+    max-width: 150px;
+    padding: 0.5rem;
+    color: #9241c8;
+    border-radius: 8px;
+    border-bottom-left-radius: 1px;
+    margin-top: 0.5rem;
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+
+  main .container .grid .left-app .app_inner_body .bottom .price-para {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+
+  main .container .grid .left-app .app_inner_body .bottom .price-para .price1, main .container .grid .left-app .app_inner_body .bottom .price-para .price2 {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(-145deg, #8838ff, #e942ff);
+    margin-block: 0.3rem;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    padding: 0.5rem 0.6rem;
+    border-radius: 10px;
+    border-bottom-left-radius: 1px;
+    color: #fff;
+  }
+
+  main .container .grid .left-app .app_inner_body .bottom .price-para .price1 .circle, main .container .grid .left-app .app_inner_body .bottom .price-para .price2 .circle {
+    width: 25px;
+  }
+
+  main .container .grid .left-app .app_inner_body .bottom .price-para .price1 span, main .container .grid .left-app .app_inner_body .bottom .price-para .price2 span {
+    font-size: 0.6rem;
+    color: #e3e1e5;
+    font-weight: 400;
+  }
+
+  main .container .grid .left-app .app_inner_body .bottom .price-para .price1 h2, main .container .grid .left-app .app_inner_body .bottom .price-para .price2 h2 {
+    color: #fff;
+    font-size: 0.9rem;
+    margin-left: 3rem;
+    font-weight: 700;
+  }
+
+  main .container .grid .left-app .app_inner_body .input-footer {
+    display: flex;
+    position: relative;
+    margin-bottom: 0.1rem;
+    margin-top: 0.7rem;
+  }
+
+  main .container .grid .left-app .app_inner_body .input-footer input {
+    display: block;
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 1rem;
+  }
+
+  main .container .grid .left-app .app_inner_body .input-footer input::-moz-placeholder {
+    font-size: 0.7rem;
+    color: #c6cacd;
+    font-weight: 500;
+  }
+
+  main .container .grid .left-app .app_inner_body .input-footer input:-ms-input-placeholder {
+    font-size: 0.7rem;
+    color: #c6cacd;
+    font-weight: 500;
+  }
+
+  main .container .grid .left-app .app_inner_body .input-footer input::placeholder {
+    font-size: 0.7rem;
+    color: #c6cacd;
+    font-weight: 500;
+  }
+
+  main .container .grid .left-app .app_inner_body .input-footer .arrow {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    background-color: #3e2753;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  main .container .grid .left-app .app_inner_body .input-footer .arrow span {
+    width: 8px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  main .container .grid .left-app .app_inner_body .input-footer .arrow span:nth-child(1) {
+    transform: translate(0px, 1px) rotate(40deg);
+  }
+
+  main .container .grid .left-app .app_inner_body .input-footer .arrow span:nth-child(2) {
+    transform: translate(-0.1px) rotate(-40deg);
+  }
+
+  main .container .grid .left-app .app_inner_header {
+    background: linear-gradient(to left, #e942ff, #8838ff);
+    border-radius: 23px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  main .container .grid .left-app .app_inner_header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 130px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    margin-inline: auto;
+    height: 18px;
+    background-color: #fff;
+  }
+
+  main .container .grid .left-app .app_inner_header_container {
+    padding-top: 1rem;
+    padding-inline: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  main .container .grid .left-app .app_inner_header_container .user {
+    display: flex;
+    align-items: center;
+    margin-block: 1rem;
+  }
+
+  main .container .grid .left-app .app_inner_header_container .user img {
+    width: 24px;
+    border-radius: 50%;
+    margin-inline: 0.5rem;
+  }
+
+  main .container .grid .left-app .app_inner_header_container .user .user-name {
+    line-height: 10px;
+    color: #fff;
+  }
+
+  main .container .grid .left-app .app_inner_header_container .user .user-name h1 {
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+
+  main .container .grid .left-app .app_inner_header_container .user .user-name span {
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: #d89eff;
+  }
+
+  main .container .grid .left-app .app_inner_header_container .user .arrow {
+    display: block;
+  }
+
+  main .container .grid .left-app .app_inner_header_container .user .arrow span {
+    width: 8px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  main .container .grid .left-app .app_inner_header_container .user .arrow span:nth-child(1) {
+    transform: translate(0px, 1px) rotate(-40deg);
+  }
+
+  main .container .grid .left-app .app_inner_header_container .user .arrow span:nth-child(2) {
+    transform: translate(-1px) rotate(40deg);
+  }
+
+  main .container .grid .left-app .app_inner__header_container .colon {
+    display: block;
+  }
+
+  main .container .grid .left-app .app_inner_header_container .colon span {
+    width: 2px;
+    background-color: #fff;
+    display: block;
+    height: 2px;
+    margin-block: 0.2rem;
+    border-radius: 50%;
+  }
+
+  main .container .grid .right-details {
+    z-index: 99;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  main .container .grid .right-details .paragraph {
+    line-height: 30px;
+    font-weight: 500;
+    color:hsl(270, 7%, 64%);
+  }
+
+  main .container .grid .right-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color:hsl(271, 15%, 43%);
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  @media (min-width: 700px) {
+
+    body::before {
+      width: 450px;
+      height: 600px;
+    }
+
+    body::after {
+      width: 450px;
+      height: 650px;
+      bottom: 0;
+      height: 460px;
+    }
+  
+    main {
+      margin: 0;
+    }
+
+    main .container .grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      max-width: 900px;
+    }
+
+    main .container .grid .left-app .app {
+      width: 250px;
+    }
+
+    main .container .grid .right-details {
+      align-self: center;
+      margin-top: 0rem;
+      text-align: left;
+    }
+
+    main .container .grid .right-details h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .attribution {
+    font-size: 0.9em;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.attribution a {
+   color: #e942ff;
+}
