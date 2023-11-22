@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body, main, .container {
+width: 100%;
+min-height: 100vh;
+}
+
+.container {
+    background-color: var(--very-light-gray);
+    padding: 5rem 10rem 2rem 10rem;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.col {
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+gap: 2rem;
+}
+
+h1 {
+    width: 100%;
+    color: var(--very-dark-blue);
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+h1 span {
+    display: block;
+    font-weight: 200;
+}
+
+.container > p {
+    font-size: 15px;
+    color: var(--grayish-blue);
+    text-align: center;
+    max-width: 510px;
+    margin: 1.5rem auto 4rem auto;
+}
+
+.card {
+    width: 350px;
+    height: 250px;
+    border-top: 5px solid;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgb(67, 115, 137 / 20%);
+    border-radius: 0.6rem;
+}
+
+.card.supervisor{
+    border-color: var(--cyan);
+}
+
+.card.team-builder {
+border-color: var(--red);
+}
+
+.card.karma {
+border-color: var(--orange);
+}
+
+.card.calc {
+border-color: var(--blue);
+}
+
+.card.supervisor, .card.team-builder, .card.karma, .card.calc {
+    box-shadow: 0px 20px 20px rgba(70, 110, 221, 0.2); 
+}
+
+.card img{
+    float: right;
+    padding-top: 2.5rem;
+}
+
+.card .title {
+    color: var(--very-dark-blue);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.card .text {
+    color: var(--grayish-blue);
+    font-size: 0.8rem;
+    line-height: 1.8;
+    padding-top: 0.5rem;
+}
+
+@media (max-width: 500px){
+    .container {
+        padding: 2rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 12px 0;
+  }
+  
+  .attribution a {
+    color: #3e52a3;
+  }
