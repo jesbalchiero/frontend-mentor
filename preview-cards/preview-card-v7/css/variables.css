@@ -1,0 +1,14 @@
+:root {
+    --border-radius: 10px;
+    --color-very-dark-magenta: hsl(300, 43%, 22%);
+    --color-soft-pink: hsl(333, 80%, 67%);
+    --color-dark-grayish-magenta: hsla(303, 10%, 53%);
+    --color-light-grayish-magenta: hsl(300, 24%, 96%);
+    --color-white: hsl(0, 0%, 100%);
+    --shadow: hsl(212, 86%, 64%, 0.1);
+    --font-size: 15px;
+    --font-family-main: "Spartan", sans-serif;
+    --font-weight-light: 400;
+    --font-weight-medium: 500;
+    --font-weight-heavy: 700;
+}
