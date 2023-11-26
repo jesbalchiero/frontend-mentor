@@ -1,0 +1,50 @@
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+  
+.background-image {
+    position: absolute;
+    background-repeat: no-repeat;
+}
+  
+.background-image-top {
+    background-image: url("../images/bg-pattern-top-mobile.svg");
+    width: 374px;
+    height: 232px;
+    top: 0;
+    left: 0;
+}
+  
+.background-image-bottom {
+    background-image: url("../images/bg-pattern-bottom-mobile.svg");
+    width: 375px;
+    height: 503px;
+    bottom: -100px;
+    right: 0;
+}
+  
+@media (min-width: 765px) {
+    
+    .background-image-top {
+      background-image: url("../images/bg-pattern-top-desktop.svg");
+      width: 584px;
+      height: 362px;
+      top: 0;
+      left: 0;
+    }
+  
+    .background-image-bottom {
+      background-image: url("../images/bg-pattern-bottom-desktop.svg");
+      width: 1085px;
+      height: 673px;
+      bottom: -100px;
+      right: 0;
+    }
+}

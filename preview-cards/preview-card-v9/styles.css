@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+:root {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(210, 46%, 95%);
+    min-width: 352px;
+}
+
+h2, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 0;
+}
+
+main {
+    min-width: 352px;
+    width: 93%;
+    max-width: 1110px;
+    display: grid;
+    gap: calc(27.5em / 13);
+    margin-top: calc(50em / 13);
+    margin-bottom: calc(50em / 13);
+}
+
+@media (min-width: 768px) {
+
+    main {
+        grid-template-columns: 22.5% 20.6% 0 22.5% 22.5%;
+        grid-template-areas: "daniel daniel daniel . kira"". patrick patrick patrick kira";
+    }
+}
+
+.testimonial {
+    padding: calc(30em / 13);
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px hsl(0, 2%, 62%);
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    width: calc(28.5em / 13);
+    display: block;
+}
+
+img:not(img[class="no-margin"]) {
+    margin-right: calc(16em / 13);
+}
+
+.border {
+    margin-right: calc(16em / 13);
+    border-radius: 50%;
+}
+
+.first, .fourty {
+    outline: hsl(273, 30%, 61%) calc(2em / 13) outset;
+}
+
+.second, .third, .fifty {
+    outline: hsl(273, 30%, 61%) calc(2em / 13) outset;
+    width: calc(28.5em/13);
+}
+
+h2 {
+    font-size: calc(15em / 13);
+}
+
+h2+p {
+    font-size: inherit;
+    font-weight: 500;
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+}
+
+.testimonial p:not(h2 + p):first-of-type {
+    width: 90%;
+    font-size: calc(25em / 16);
+    margin-top: calc(9em / 13);
+    margin-bottom: calc(15em / 13);
+}
+
+.testimonial p:not(h2 + p):last-child {
+    width: 85%;
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+    line-height: 1.4em;
+}
+
+.testimonial:nth-of-type(1) {
+    background: url("../images/bg-pattern-quotation.svg") no-repeat hsl(263, 55%, 52%);
+    background-position: top right calc(42em / 13);
+    background-size: calc(113em / 13);
+}
+
+.testimonial:nth-of-type(2) {
+    background: hsl(217, 19%, 35%);
+}
+
+.testimonial:nth-of-type(3), .testimonial:nth-of-type(5) {
+    background: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+.testimonial:nth-of-type(3) p:not(h2 + p):last-child,.testimonial:nth-of-type(3) h2+p, .testimonial:nth-of-type(5) p:not(h2 + p):last-child, .testimonial:nth-of-type(5) h2+p {
+    color: hsl(217, 19%, 35%);
+}
+
+.testimonial:nth-of-type(4) {
+    background: hsl(219, 29%, 14%);
+}
+
+@media (min-width: 768px) {
+    
+    .testimonial:first-of-type {
+        background-size: calc(110em / 13);
+        background-position: top right calc(69em / 13);
+    }
+
+    .testimonial p:not(h2 + p):first-of-type, .testimonial p:not(h2 + p):last-of-type {
+        width: 100%;
+    }
+
+    .testimonial:nth-of-type(1) {
+        grid-area: daniel;
+    }
+
+    .testimonial:nth-of-type(4) {
+        grid-area: patrick;
+    }
+
+    .testimonial:nth-of-type(5) {
+        grid-area: kira;
+    }
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: hsl(217, 19%, 35%);
+}
+
+.attribution a {
+    color: hsl(263, 55%, 52%)
+}
